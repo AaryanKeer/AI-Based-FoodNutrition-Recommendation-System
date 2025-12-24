@@ -62,10 +62,9 @@ This was conducted to explore performance improvements and future model-based su
 ---
 
 
-## 📂 Project Structure
+## 📂 Project Structure in short
 
-**Basic Project structure**
-
+```bash
 NutriTrack/
 │
 ├── backend/                 # Node.js + Express API + data
