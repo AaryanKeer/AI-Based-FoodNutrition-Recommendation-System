@@ -57,7 +57,7 @@ This was conducted to explore performance improvements and future model-based su
 - **Accuracy Achieved**: ~94% (on dominant meal classes)
 - **Evaluation**: Confusion Matrix, Accuracy, Loss Curves
 
-📁 GCN experimentation is available in the Colab notebook (see `/colab/GNN_experiment.ipynb`).
+📁 GCN experimentation is available on my Colab notebook
 
 ---
 
