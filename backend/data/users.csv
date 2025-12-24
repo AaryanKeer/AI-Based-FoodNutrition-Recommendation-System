@@ -1,0 +1,11 @@
+user_id,name,age,gender,weight_kg,height_cm,activity_level,preference,disease
+1,Aryan Kumar,24,Male,72,178,Moderate,Both,
+2,Meera Singh,29,Female,58,162,Active,Vegetarian,
+3,Ravi Patel,34,Male,85,172,Sedentary,Vegetarian,Diabetes
+4,Sneha Iyer,41,Female,70,165,Moderate,Vegetarian,Heart
+5,Arjun Reddy,37,Male,88,180,Sedentary,Both,Heart
+6,Priya Nair,26,Female,60,168,Active,Vegetarian,
+7,Rahul Sharma,30,Male,76,175,Moderate,Non-Vegetarian,
+8,Kavita Joshi,52,Female,73,160,Sedentary,Vegetarian,Diabetes
+9,Vikram Das,45,Male,90,170,Sedentary,Both,Heart
+10,Neha Verma,33,Female,65,165,Moderate,Vegetarian,

@@ -1,0 +1,461 @@
+/* Layout */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #2f855a; /* green-700 */
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.nav-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-link {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  margin: 0;
+  border-radius: 5px;
+  border: 1px solid #000; /* black border */
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-link.active {
+  background: #276749;
+}
+
+.nav-link.logout {
+  margin-top: 20px;
+  background: #c53030;
+  border-color: #000;
+}
+
+.nav-link:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 25px;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.search-input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.profile-summary {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Generic card */
+.card {
+  background: white;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #000; /* black border */
+}
+
+/* Top section (profile + summary) */
+.top-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  flex: 1.4;
+}
+
+.summary {
+  flex: 1;
+}
+
+/* Summary cards */
+.summary h2 {
+  margin-bottom: 10px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.summary-card {
+  background: #f9fafb;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000; /* black border */
+}
+
+.summary-card h3 {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.summary-card p {
+  color: #2f855a;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Profile form */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 4px;
+}
+
+.profile-form input,
+.profile-form select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.primary-btn,
+.secondary-btn {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.primary-btn {
+  background: #2f855a;
+  color: white;
+}
+
+.primary-btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.secondary-btn {
+  background: #edf2f7;
+  color: #2d3748;
+}
+
+.secondary-btn:hover {
+  background: #e2e8f0;
+}
+
+/* Messages */
+.error-text {
+  color: #c53030;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.success-text {
+  color: #2f855a;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.muted {
+  color: #718096;
+  font-size: 14px;
+}
+
+/* Recommended foods - vertical list */
+.recommendations h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.food-list {
+  display: flex;
+  flex-direction: column; /* vertical one by one */
+  gap: 10px;
+}
+
+.food-card {
+  background: #fdfdfd;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #000; /* black border */
+}
+
+.food-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.meal-tag {
+  background: #edf2f7;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  border: 1px solid #000;
+}
+
+.dessert-tag {
+  background: #fbd38d;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  border: 1px solid #000;
+}
+
+.food-card h3 {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.food-card p {
+  margin: 2px 0;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: #4a5568;
+}
+
+/* My Meals */
+.mymeals-card h2 {
+  margin-bottom: 10px;
+}
+
+.mymeals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mymeal-section {
+  margin-bottom: 12px;
+}
+
+.mymeal-section h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.mymeal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mymeal-item {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #000; /* black border */
+  background: #fdfdfd;
+}
+
+.mymeal-main {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.mymeal-sub {
+  font-size: 12px;
+  color: #4a5568;
+  margin-top: 2px;
+}
+
+/* Profile tab full card */
+.profile-card-full {
+  max-width: 600px;
+}
+
+/* ========================= */
+/*      RESPONSIVE STYLES    */
+/* ========================= */
+
+/* Tablets & small laptops */
+@media (max-width: 992px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-vertical {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .nav-link {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+
+  .main {
+    padding: 16px;
+  }
+
+  .top-section {
+    flex-direction: column;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-input {
+    width: 60%;
+  }
+}
+
+/* Small tablets & phones */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .profile-summary {
+    width: 100%;
+  }
+
+  .top-section {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .mymeal-main {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 12px;
+  }
+
+  .logo {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .nav-vertical {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    flex: none;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .main {
+    padding: 12px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .food-card {
+    padding: 8px;
+  }
+
+  .profile-form input,
+  .profile-form select {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  .mymeals-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
