@@ -64,11 +64,13 @@ This was conducted to explore performance improvements and future model-based su
 
 ## 📂 Project Structure
 
-```bash
+**Basic Project structure**
+
 NutriTrack/
 │
-├── backend/                 # Node.js + Express API
+├── backend/                 # Node.js + Express API + data
 │   ├── routes/
+│   ├── data/merged_food.json
 │   ├── models/
 │   └── utils/
 │
@@ -77,13 +79,13 @@ NutriTrack/
 │       ├── components/
 │       └── pages/
 │
-├── colab/                   # Experimental GCN notebooks
-│   └── GNN_experiment.ipynb
+│
+│  
 │
 ├── dataset/
 │   ├── Indian_Food.csv
 │   ├── IFCT_2017.csv
-│   └── merged_food.json
+│   
 │
 └── README.md
 
